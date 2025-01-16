@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #525151;
+}
+
+header {
+    justify-content: center;
+    display: flex;
+    background-color: #333;
+}
+
+/* Navigation bar settings */
+.nav-bar {
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* links settings */
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.nav-bar a:hover{
+    color: aquamarine;
+}
+
+.nav-bar a:active{
+    color: rgb(255, 0, 0);
+}
+
+/* tiles */
+.column{
+    margin-top: 5%;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tile{ 
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: auto;
+    box-shadow: 0 4px 6px black;
+    overflow: hidden;
+    color: white;
+    margin: 1%;
+    border-radius: 15px;
+}
+
+.tile{
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: auto;
+    box-shadow: 0 4px 6px black;
+    overflow: hidden;
+    color: white;
+    margin: 1%;
+    border-radius: 15px;
+}
+/* h2 s here */
+.tile h2{
+    margin: 10%;
+    color: black;
+}
+
+/* p s here */
+
+.tile p{ 
+    margin: 10%;
+    color: black;
+    text-shadow: 1px, black;
+}
+

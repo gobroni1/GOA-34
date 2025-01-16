@@ -1,0 +1,13 @@
+.parent {
+    width: 800px;
+    height: 800px;
+    border: 5px solid black;
+}
+
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 3px solid red;
+}

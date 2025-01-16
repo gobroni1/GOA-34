@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cookie {
+            width: 200px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .cookie:hover {
+            transform: scale(1.1);
+        }
+
+        .stats {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        .shop {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .shop-item {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .shop-item:hover {
+            transform: scale(1.05);
+        }
+
+        .shop-item h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .shop-item button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .shop-item button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .shop-item button:hover:not(:disabled) {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>🍪 Cookie Clicker 🍪</h1>
+    <img src="https://i.imgur.com/5XmHf8d.png" alt="Cookie" class="cookie" id="cookie">
+    <div class="stats">
+        <p>Cookies: <span id="cookieCount">0</span></p>
+        <p>Gold: <span id="goldCount">0</span></p>
+    </div>
+    <div class="shop">
+        <div class="shop-item">
+            <h3>Bigger Finger</h3>
+            <p>Cost: <span id="bigFingerCost">50</span> Gold</p>
+            <button id="bigFingerBtn">Buy</button>
+        </div>
+        <div class="shop-item">
+            <h3>Better Mines</h3>
+            <p>Cost: <span id="betterMinesCost">100</span> Cookies</p>
+            <button id="betterMinesBtn">Buy</button>
+        </div>
+        <div class="shop-item">
+            <h3>Double Cookies</h3>
+            <p>Cost: <span id="doubleCookiesCost">200</span> Gold</p>
+            <button id="doubleCookiesBtn">Buy</button>
+        </div>
+    </div>
+
+    <script src="cc.js"></script>
+</body>
+</html>

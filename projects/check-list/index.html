@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Check List</title>
+</head>
+<body>
+
+    <div class="side-panel" id="side-panel">
+        <!-- Control panel content can go here -->
+        <button id="create-event" type="button">New</button>
+
+        <button id="deletb">Delet</button>
+
+        <div class="dropdown">
+            <button id="dropdownButton">Filters</button>
+            <div class="dropdown-content" id="dropdownContent">
+              <div class="checkbox-container">
+                <input type="checkbox" id="filter1">
+                <label for="option1">Complit</label>
+              </div>
+              <div class="checkbox-container">
+                <input type="checkbox" id="filter2">
+                <label for="option2">Incomplit</label>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-screen" id="main-screen">
+        <!-- Event and Task div blocks will be added here -->
+    </div>
+    
+    <!-- pop up box -->
+        <div class="modal" id="modal">
+            <div class="modal-inner">
+                <h2>enter event name</h2>
+                <input type="text" id="eventname">
+                <button id="closeModal">save</button>
+            </div>
+        </div>
+    <!-- pop up box -->
+
+
+    <!-- pop up box for tasks -->
+    <div class="modal2" id="modal2">
+        <div class="modal2-inner">
+            <h2>enter a new task</h2>
+            <input type="text" id="taskname">
+            <button id="closeModal2">save</button>
+        </div>  
+    </div>
+    <!-- pop up box for tasks -->
+    <script src="main.js"></script>
+</body>
+</html>

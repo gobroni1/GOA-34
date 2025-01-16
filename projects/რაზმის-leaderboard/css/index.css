@@ -1,0 +1,155 @@
+.widgit1 {
+    padding: 20px;
+}
+
+.wid1-1, .wid2-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f05ff355;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.wid1-1 img, .right-pic2 img, .left-pic1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.limit-p, .limiter1-1, .limiter2-2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+ul li img {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+/* button styling */
+.signupb {
+    border: none;
+    background-color: #ac34b7;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signupb:hover {
+    background-color: #9d00cd;
+}
+
+.signupb a {
+    text-decoration: none;
+    color: white;
+}
+
+/* bottom section */
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 20px;
+    color: white;
+}
+
+.bottom-section h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.bottom-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bottom-section ul li {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.bottom-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-section a:hover {
+    text-decoration: underline;
+}
+
+.right-pic1 {
+    height: auto;
+    width: 100vh;
+}
+
+.right-pic1, .right-pic2 {
+    display: flex;
+    justify-content: right;
+}
+
+/* responsive */
+@media only screen and (min-width: 768px) {
+    .wid1-1, .wid2-2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .limit-p, .limiter1-1, .limiter2-2 {
+        width: 50%;
+    }
+
+    .right-pic1 img, .right-pic2 img, .left-pic1 img {
+        max-width: 50%; 
+        align-self: flex-end; 
+    }
+
+    .limit-p, .limiter1-1, .limiter2-2 {
+        text-align: left;
+    }
+
+    .bottom-section {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav ul {
+        justify-content: space-evenly;
+    }
+
+    .wid1-1, .wid2-2 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .wid1-1 img, .right-pic2 img, .left-pic1 img {
+        max-width: 60%; 
+        align-self: flex-end; 
+    }
+
+    .limit-p, .limiter1-1, .limiter2-2 {
+        width: 55%; 
+        text-align: left; 
+    }
+
+    .bottom-section {
+        justify-content: space-between;
+    }
+}

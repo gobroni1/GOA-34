@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="canvas">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #567599;
+            }
+
+            .canvas {
+                width: 160px;
+                height: 160px;
+                background-color: #E8AD6D;
+                grid-template-columns: repeat(3, 52px);
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            .dot {
+                width: 20px;
+                height: 20px;
+                background-color: #587795;
+                border-radius: 50%;
+                justify-self: center;
+                align-self: center;
+            }
+        </style>
+
+</body>
+
+</html>

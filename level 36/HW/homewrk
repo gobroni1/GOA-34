@@ -1,0 +1,39 @@
+# Hexadecimal (Hex) Color System:
+# - Characteristics: Hex colors are a way of representing colors using hexadecimal values.
+# - Writing Style: A hex color code starts with a '#' followed by six hexadecimal digits.
+#                  Each pair of digits represents the red, green, and blue components of the color, respectively.
+#                  For example, #FF5733 corresponds to red (FF), green (57), and blue (33).
+# - Rules:
+#    - Hex values range from 00 to FF, where 00 is the lowest intensity and FF is the highest.
+#    - Valid hex digits include 0-9 and A-F.
+# - Pros:
+#    - Compact representation of colors.
+#    - Easy to read and use in web development and design.
+# - Cons:
+#    - Not as intuitive for humans to understand the color just by looking at the code.
+#    - Limited to the RGB color space.
+
+# Example of Hex color code:
+
+background_color = "#FF5733"  # Orange color (Red: FF, Green: 57, Blue: 33)
+
+
+# RGB Color System:
+# - Characteristics: RGB colors are represented using the red, green, and blue color model.
+# - Writing Style: An RGB color value is written as rgb(r, g, b), where r, g, and b are integers
+#                  representing the intensity of red, green, and blue, respectively.
+#                  Each value ranges from 0 to 255.
+#                  For example, rgb(255, 87, 51) corresponds to red (255), green (87), and blue (51).
+# - Rules:
+#    - Values for red, green, and blue must be between 0 and 255.
+#    - The intensity values determine the mix of colors to produce the final color.
+# - Pros:
+#    - More intuitive and easier to understand the color composition.
+#    - Flexible for various applications beyond web development.
+# - Cons:
+#    - Less compact compared to hex codes.
+#    - Still limited to the RGB color space.
+
+# Example of RGB color code:
+
+background_color_rgb = "rgb(255, 87, 51)"  # Orange color (Red: 255, Green: 87, Blue: 51)

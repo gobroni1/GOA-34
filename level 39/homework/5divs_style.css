@@ -1,0 +1,40 @@
+body { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 { 
+    background-color: aqua;
+    width: 8%;
+    justify-content: center;
+    margin: 20px;
+}
+.div1 p { 
+    color: coral;
+    text-decoration: dotted;
+}
+
+.div2 {
+    background-color: azure;
+    width: 10%;
+    margin: 20px;
+}
+
+.div3 {
+    background-color: blue;
+    width: 16%;
+    margin: 20px;
+}
+
+.div4 { 
+    background-color: blueviolet;
+    width: 19%;
+    margin: 20px;
+}
+
+.div5 { 
+    background-color: brown;
+    width: 24%;
+    margin: 20px;
+}

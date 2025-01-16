@@ -1,0 +1,7 @@
+git hub ზე მუშაობა
+commands 
+
+git init 
+git add . ('.' means that you add all files)
+git commit -m "comment" (getting files ready to upload)
+git push -u (uploading on git hub)

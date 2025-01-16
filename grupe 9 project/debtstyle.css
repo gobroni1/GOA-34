@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(53, 53, 53);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: rgb(24, 24, 24);
+    padding: 0 20px; 
+}
+
+.m-area a {
+    padding-right: 100px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(75, 204, 255);
+}
+
+.logo {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    height: 50px;
+    padding-left: 100px;
+    padding-top: 20px;
+    display: block; 
+}
+
+.c-m-for-tile {
+    text-align: center;
+}
+
+.m-tile {
+    height: 320px;
+    width: 730px;
+    background-color: rgb(102, 101, 101);
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    margin: 15px auto;
+    position: relative;
+}
+
+.m-tile img {
+    justify-content: center;
+}
+
+.end {
+    padding: 30px;
+    background-color: rgb(34, 34, 34);
+    width: auto;
+    height: 400px;
+}
+
+.p1 {
+    font-size: medium;
+}
+
+.p2 {
+    font-size: small;
+}

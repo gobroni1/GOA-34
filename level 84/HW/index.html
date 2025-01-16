@@ -1,0 +1,42 @@
+<div class="shape"></div>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #d7e1f6; /* Light blue background */
+  }
+
+  .shape {
+    position: relative;
+    width: 150px;
+    height: 80px;
+  }
+
+  .shape::before,
+  .shape::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 10px solid #4e7ff3; /* Blue border */
+    border-radius: 50%;
+    background-color: #d7e1f6; /* Matches background to cut out inner part */
+  }
+
+  .shape::before {
+    left: 0; /* Left circle */
+  }
+
+  .shape::after {
+    right: 0; /* Right circle */
+  }
+
+  .shape::after {
+    background-clip: content-box;
+  }
+  
+</style>

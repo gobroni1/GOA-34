@@ -1,0 +1,22 @@
+.bg-green {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+}
+
+th {
+    padding: 12px 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table tr:last-child td {
+    border-bottom: 2px solid #1abc9c;
+}

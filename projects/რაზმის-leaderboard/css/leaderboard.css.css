@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(222, 222, 222);
+    display: flex;
+}
+
+nav {
+    background-color: #a600a6b8;
+    display: flex;
+    flex-direction: column;
+    width: 18vh;
+    height: 97vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}       
+
+.for-back-btn {
+    display: flex;
+    flex-direction: column;
+    width: 16vh;
+    height: 10vh;
+    border-radius: 10px;
+    align-items: center;
+
+    position: absolute;
+}
+
+.for-back-btn a {
+    text-decoration: none;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: medium;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+nav ul li {
+    padding-bottom: 25%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: medium;
+}
+
+nav ul li a:hover {
+    color: rgb(224, 224, 224);   
+}
+
+
+.main {
+    width: 200vh;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(140, 67, 129, 0.501);
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.leaderboard-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100vh;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.leaderboard-entry:hover {
+    transform: translateY(-5px);
+}
+
+
+.username {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: #333;
+}
+
+.username a{
+    text-decoration: none;
+    color: #333;
+}
+
+.xp {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #28a745;
+    font-size: 16px;
+}
+
+
+.github-link {
+    justify-content: center;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+

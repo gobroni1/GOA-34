@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animations</title>
+    <style>
+        .button {
+            background-color: #3498db; 
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease; 
+        }
+
+        .button:hover {
+            transform: scale(1.1); 
+            background-color: #e74c3c; 
+        }
+
+
+        .button:active {
+            background-color: #c0392b; 
+            letter-spacing: 2px; 
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Click Me</button>
+</body>
+</html>

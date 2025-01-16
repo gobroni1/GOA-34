@@ -1,0 +1,4 @@
+css lesson 
+
+nth-childe()  -  allows you to choose form paragraphs by there place in the row 
+it is written like - p:nth-chiled(#){ text }

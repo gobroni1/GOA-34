@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sss</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .input-section, .output-section, .add-email-section {
+      width: 30%;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+    .add-email-section input, .add-email-section textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>ელ. ფოსტის ფილტრი</h1>
+  <div class="container">
+
+    <div class="input-section">
+      <label for="filter">ფილტრი თემით:</label>
+      <select id="filter">
+        <option value="">ყველა</option>
+        <option value="მოგზაურობა">მოგზაურობა</option>
+        <option value="მოხსენება">მოხსენება</option>
+        <option value="გაცნობიერება">გაცნობიერება</option>
+      </select>
+      <button id="applyFilter">გამოყენება</button>
+    </div>
+
+    <div class="add-email-section">
+      <h2>მიმართვის დამატება:</h2>
+      <input type="text" id="newSubject" placeholder="თემა">
+      <textarea id="newContent" placeholder="შიგთავსი"></textarea>
+      <input type="date" id="newDate" placeholder="თარიღი">
+      <button id="addEmail">დამატება</button>
+    </div>
+
+    <div class="output-section">
+      <h2>შედეგები:</h2>
+      <ul id="emailList">
+
+      </ul>
+    </div>
+  </div>
+  <script src="main98.js"></script>
+</body>
+</html>

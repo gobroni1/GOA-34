@@ -1,0 +1,68 @@
+
+<body>
+    <div class="main">
+        <div class="rowone">
+            <div class="r1d1"></div>
+            <div class="r1d2"></div>
+        </div>
+    
+        <div class="rowtwo"> 
+            <div class="r1d2"></div>
+            <div class="r1d1"></div>
+        </div>
+        <div class="middle"></div>
+    </div>
+
+    <style>
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+
+        .main {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px;
+        }
+
+
+        .rowone,
+        .rowtwo {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .r1d1 { 
+            width: 220px;
+            height: 170px;
+            background-color: #62306D;
+
+        }
+
+        .r1d2 {
+            width: 180px;
+            height: 170px;
+            background-color: #AA445F;
+        }
+
+
+        .middle {
+            position: absolute;
+            top: 80px;
+            left: 120px;
+            width: 160px;
+            height: 140px;
+            background-color: #E38F66;
+            z-index: 1;
+        }
+    </style>
+</body>
+

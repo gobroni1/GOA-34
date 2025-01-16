@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    background-color: #2e2e2e;
+
+    width: 100%;
+    height: 100vh;
+
+    color: #cccccc;
+    font-family: Arial, sans-serif;
+}
+
+.side-panel {
+    width: 97%;
+    height: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1%;
+    border-radius: 15px;
+    background-color: #424242;
+    padding: 20px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.main-screen {
+    flex: 1; 
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+
+    padding: 20px;
+    gap: 20px; 
+
+    overflow-x: auto; 
+}
+
+button {
+    width: 50%;
+    height: 5%;
+
+    margin: 1%;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #616161;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: background-color 0.3s;
+}
+
+#create-event {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1%;
+    background-color: #424242;
+}
+
+.dropdown {
+    display: inline-block;
+    margin-left:44%;
+
+    margin-right: 10%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: white;
+    min-width: 110px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.checkbox-container {
+    margin: 5px 0;
+}
+
+.checkbox-container label {
+    cursor: pointer;
+}
+
+#dropdownButton{
+    background-color: #424242   ;
+}
+
+.created-div {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.created-div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal, .modal2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open, .modal2.open2 {
+    opacity: 1;
+    z-index: 999;
+}
+
+.modal-inner, .modal2-inner {
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+}
+
+input[type="text"], input[type="file"] {
+    width: 60%;
+    height: 30px;
+
+    border-radius: 8px;
+    border: 1px solid #555555;
+    background-color: #444444;
+    color: #ffffff;
+
+    margin: 10px;
+}
+
+input[type="text"], input[type="file"]:focus {
+    border-color: #757575;
+}
+
+
+#deletb { 
+    margin-bottom: 1.9%;
+    margin-left: 46%;
+}

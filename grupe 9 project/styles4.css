@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="tel"],
+.container input[type="email"],
+.container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+.container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.container .psw {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.container .register-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .register-message a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.container .register-message a:hover {
+    text-decoration: underline;
+}
+
+.container[style] {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 20px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .input-section, .output-section {
+      width: 50%;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ელ. ფოსტის ფილტრი</h1>
+  <div class="container">
+
+    <div class="input-section">
+      <label for="filter">ფილტრი თემით:</label>
+      <select id="filter">
+        <option value="">ყველა</option>
+        <option value="მოგზაურობა">მოგზაურობა</option>
+        <option value="მოხსენება">მოხსენება</option>
+        <option value="გაცნობიერება">გაცნობიერება</option>
+      </select>
+      <button id="applyFilter">გამოყენება</button>
+    </div>
+
+    <div class="output-section">
+      <h2>შედეგები:</h2>
+      <ul id="emailList">
+
+      </ul>
+    </div>
+  </div>
+  <script src="main97.js"></script>
+</body>
+</html>

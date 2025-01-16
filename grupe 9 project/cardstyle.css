@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(58, 58, 58);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: rgb(24, 24, 24);
+    padding: 0 20px; 
+}
+
+.m-area a {
+    padding-right: 100px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(75, 204, 255);
+}
+
+
+.logo {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    height: 50px;
+    padding-left: 100px;
+    padding-top: 20px;
+    display: block; 
+}
+
+.in-column {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tile00,.tile01,.tile11 {
+    height: 270px;
+    width: 550px;
+    background-color: rgb(102, 101, 101);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px black;
+    overflow: hidden;
+    color: white;
+    margin: 15px;
+}
+
+.tile00 img,
+.tile01 img, .tile11 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

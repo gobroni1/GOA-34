@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+    background-color: rgb(221, 221, 221);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px) opacity(70%);
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.centered-text a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.centered-text:hover {
+    transform: translate(-50%, -60%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* All-container for vertical stacking */
+.all-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+/* Movie Poster Section */
+.movie-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    width: 100%;
+    max-width: 950px; 
+    margin-top: 30px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); 
+}
+
+/* Poster is 30% of the container width */
+.poster-container {
+    width: 30%; 
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); 
+}
+
+.poster-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); 
+}
+
+/* Movie info takes up the remaining space */
+.movie-info {
+    width: 70%; 
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    text-align: left;
+    margin-left: 20px; 
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); 
+}
+
+.movie-info h4 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.movie-info p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Hover Effect */
+.movie-container:hover .poster-container {
+    transform: translateX(-10%); 
+}
+
+.movie-container:hover .movie-info {
+    transform: translateX(10%); 
+}

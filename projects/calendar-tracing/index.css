@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(225, 225, 225);
+}
+
+
+/* code for first row */
+.first-row {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: aqua;   
+    border-radius: 15px;
+}
+
+.prog-pic, .track-pic {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin: 1%;
+}
+
+.prog-side {
+    margin-left: 50%;
+    margin-right: 5%;
+    
+}
+
+.prog-side h2, .track-side h2{
+    font-size: large;
+}
+
+.prog-side ul, .track-side ul {
+    line-height: 1.8;
+    font-size: large;
+}
+
+/* second row code */
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: aqua;   
+    border-radius: 15px;
+    margin-top: 1%;
+}
+
+.track-side {
+    margin-right: 50%;
+    margin-left: 5%;
+}

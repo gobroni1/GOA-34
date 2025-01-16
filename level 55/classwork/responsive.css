@@ -1,0 +1,89 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.bank-text {
+    color: white;
+    margin: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex: 1; /* Take up available space */
+    justify-content: center; /* Center the content */
+}
+
+.nav-buttons {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-buttons li {
+    margin: 0 15px; /* Space between text items */
+    color: white;
+}
+
+.nav-buttons .nav-button {
+    margin-left: auto; /* Push the button to the right */
+}
+
+.nav-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+    background-color: #575757;
+}
+
+
+@media (min-width: 490px) and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center; /* Center align all items */
+    }
+
+    .nav-container {
+        width: 100%;
+        justify-content: center; /* Center the nav items */
+        margin-top: 10px; /* Add some space between the title and the nav items */
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%;
+        align-items: center; /* Center nav items horizontally */
+    }
+
+    .nav-buttons li {
+        margin: 5px 0; /* Stack items vertically with some spacing */
+    }
+
+    .nav-button {
+        margin: 10px 0 0 0; /* Center the button and add space above it */
+    }
+
+    .nav-buttons button {
+        width: auto; /* Adjust button width */
+        padding: 15px;
+        font-size: 16px;
+    }
+
+}
