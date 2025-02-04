@@ -1,0 +1,1 @@
+code is written with help of AI, i am curently carching up because of algorithms are on the same day as my lessons :) home you'll understand 

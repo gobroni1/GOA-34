@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>წიგნები და ჟანრები</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>წიგნები და ჟანრები</h1>
+    <p>აირჩიეთ წიგნი და გაეცანით მის ჟანრს!</p>
+  </header>
+
+  <div class="book-list">
+    <div class="book" id="book1">
+      <h2>სათავგადასავლო წიგნი</h2>
+      <p><strong>ავტორი:</strong> John Doe</p>
+      <p><strong>წიგნის ჟანრი:</strong> Adventure</p>
+      <button onclick="showBookDetails('adventure')">დეტალები</button>
+    </div>
+
+    <div class="book" id="book2">
+      <h2>სატირა წიგნი</h2>
+      <p><strong>ავტორი:</strong> Jane Doe</p>
+      <p><strong>წიგნის ჟანრი:</strong> Satire</p>
+      <button onclick="showBookDetails('satire')">დეტალები</button>
+    </div>
+
+    <div class="book" id="book3">
+      <h2>ფანტაზია წიგნი</h2>
+      <p><strong>ავტორი:</strong> Timber Smith</p>
+      <p><strong>წიგნის ჟანრი:</strong> Fantasy</p>
+      <button onclick="showBookDetails('fantasy')">დეტალები</button>
+    </div>
+  </div>
+
+  <div class="book-details">
+    <h2>წიგნის დეტალები</h2>
+    <p id="book-details">აირჩიეთ წიგნი!</p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
