@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div id="registerPage">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div id="shopPage" style="display:none;">
+        <h2>Shop</h2>
+        <div id="productList"></div>
+        <button id="viewCartButton">View Cart</button>
+        <div id="cartContainer" style="display:none;">
+            <h3>Shopping Cart</h3>
+            <div id="cartList"></div>
+            <button id="checkoutButton">Checkout</button>
+            <button id="clearCartButton">Clear Cart</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
