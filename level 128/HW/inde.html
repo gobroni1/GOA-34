@@ -4,37 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Animal Photo Generator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f9;
-        }
-        .container {
-            margin-top: 20px;
-        }
-        .checkboxes {
-            margin: 10px 0;
-        }
-        #animalImage {
-            margin-top: 20px;
-            max-width: 500px;
-            max-height: 400px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <h1>დაამატე შენს საყვარელ ცხოველს!</h1>
@@ -48,37 +18,6 @@
         <div id="animalImage"></div>
     </div>
 
-    <script>
-        async function generateImage() {
-            const catChecked = document.getElementById("catCheckbox").checked;
-            const dogChecked = document.getElementById("dogCheckbox").checked;
-            const foxChecked = document.getElementById("foxCheckbox").checked;
-
-            let imageUrl = '';
-
-            // Check which checkbox is checked and fetch an image accordingly
-            if (catChecked) {
-                const response = await fetch("https://api.thecatapi.com/v1/images/search");
-                const data = await response.json();
-                imageUrl = data[0].url;
-            } else if (dogChecked) {
-                const response = await fetch("https://dog.ceo/api/breeds/image/random");
-                const data = await response.json();
-                imageUrl = data.message;
-            } else if (foxChecked) {
-                const response = await fetch("https://randomfox.ca/floof/");
-                const data = await response.json();
-                imageUrl = data.image;
-            }
-
-            // Display the image if there is one
-            const imageDiv = document.getElementById("animalImage");
-            if (imageUrl) {
-                imageDiv.innerHTML = `<img src="${imageUrl}" alt="Random Animal" />`;
-            } else {
-                imageDiv.innerHTML = "გთხოვთ, აირჩიოთ ცხოველი!";
-            }
-        }
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>

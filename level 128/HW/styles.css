@@ -1,0 +1,29 @@
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .checkboxes {
+            margin: 10px 0;
+        }
+        #animalImage {
+            margin-top: 20px;
+            max-width: 500px;
+            max-height: 400px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
