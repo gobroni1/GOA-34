@@ -1,0 +1,516 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color:rgb(245, 237, 228);
+
+    align-items: center;    
+    margin: 0;
+}
+
+#edipage {
+    margin-left: 2vh;
+    text-decoration: none;
+}
+
+.top-strip {
+    display: flex;
+    flex-direction:row;
+
+    width: 100%;
+    height: 6vh;
+    align-items: center;
+    justify-content:space-between;
+    background-color:#2f4f4f;
+
+    border-radius:10px;
+    border-top-left-radius:0px;
+    border-top-right-radius: 0px;
+}
+
+#settings {
+    width: 3vh;
+    height: 2vh;
+
+    margin-left: 2.5vh;
+}
+
+#filters {
+    width: 4vh;
+    height: auto;
+
+    margin-right: 1.5vh;
+}
+
+#qurrentbrt {
+    width: 40%;
+    height: 4vh;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: 5px;
+    align-items: center;
+    justify-content:space-between;
+
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 1.5%;  */
+}
+
+#searchBar {
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+
+    border: none;
+    font-size: medium;
+}
+
+#searchBar:focus {
+    outline: none;
+  }
+
+#search {
+    width: 4vh;
+    height: auto;
+}
+
+#test:hover {
+    background-color: aqua;
+}
+
+.searchResults{
+    width: 40%;
+    height: 15vh;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: 5px;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    margin-top: 6vh;
+
+    display: none;
+}
+
+.near {
+    width: 80%;
+    height: 4vh;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: 5px;
+    align-items: center;
+    justify-content:center;
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+}
+
+
+.lb-sel{
+    display: flex;
+    flex-direction: column;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    height: 85vh;
+
+    background-color: rgb(255, 255, 255);
+    border-radius:10px;
+    margin-top: 1%;
+
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+    align-items: center;
+    overflow-y: auto;
+}
+
+#mostecurent {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* css for aded users */
+#nameP, #dateP {
+    margin: 0;
+
+    font-family:"Merriweather", serif;
+    font-size: small;
+    font-weight: 300;
+}
+
+.userDiv {
+    width: 90%;
+    height: 4%;
+    margin-top: 1vh;
+
+    background-color: rgba(240, 240, 240, 0.719);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.userDiv:hover {
+    background-color: rgba(224, 224, 224, 0.719);
+    transform: translateY(-3px); 
+    transition: transform 0.3s ease-in-out;
+
+    cursor: pointer;   
+}
+
+/*  */
+.side-bar{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.514);
+    backdrop-filter: blur(10px);
+    margin-right: 30%;
+
+    border-radius:10px;
+    border-top-left-radius: 0px;
+    display: none;
+}
+
+.side-bar img {
+    width: 3.5vh;
+    height: 2ch;
+
+    margin: 5%;
+    filter: brightness(1.3);
+}
+
+#addpeoplep {
+    margin-left: 4vh;
+    transition: 0.5s;
+}
+
+#addpeoplep:hover{
+    transform: translateY(-5px); 
+    transition: transform 0.2s ease-in-out;
+
+    cursor: pointer;    
+}
+
+/* filter's pop up box */
+.popupbg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    width:300px;
+    height: 20%;
+
+    background-color: #2f4f4f;
+    border-radius:10px;
+
+    z-index: 3;
+
+    padding: 2vh;
+}
+
+.monthsselector {
+    width: 100%;
+    height: 25%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.filters1 {
+    width: 100%;
+    height: 25%;
+
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.filterp {
+    font-family:"Merriweather", serif;
+    font-size: small;
+    font-weight: 300;
+}
+
+.filtersbuttondiv{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.toggle-container {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-container.active {
+    background-color: #4CAF50;
+}
+
+.toggle-container.active .toggle-ball {
+    left: 27px;
+}
+
+#aplay, #cancelfilter{
+    margin-top: 1vh;
+
+    font-size: small;
+    font-family: "Merriweather", serif;;
+    font-weight: 300;
+    
+    border-radius: 10px;
+    border: none;
+    padding: 6px;
+    width: 20%;
+
+    background-color: white;
+}
+
+
+
+#aplay:hover, #cancle:hover, #save:hover, #cancelfilter:hover{
+    background-color: white;
+    filter: brightness(0.7);
+}
+/*  */
+
+
+/* add user pop up box */
+
+.adduserpopup {
+    width: 300px;
+    height: 13%;
+
+    background-color: #2f4f4f;
+    border-radius:10px;
+    z-index: 3;
+    padding: 2vh;
+
+    z-index: 3;
+}
+
+.pop2row1, .pop2row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pop2row1 {
+    width: 100%;
+
+    background-color: #2f4f4f;
+}
+
+.pop2row2 {
+    margin-top: 1vh;
+}
+
+#fullName, #birthDate {
+    border-radius:5px;
+    border: none;
+    height: 3vh;
+}
+
+#birthDate{
+    width: 57%;
+}
+
+.saveAndCancle {
+    margin-top: 3vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#cancle, #save {
+    border-radius: 10px;
+    padding: 6px;
+
+    background-color: white;
+    border: none;
+
+    font-size: small;
+    font-family: "Merriweather", serif;;
+    font-weight: 300;
+
+    width: 20%;
+}
+
+.adduserpopupbg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    display: none;
+}
+
+/* delet pop up */
+.popUp3bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.616);
+
+    z-index: 1;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    display: none;
+}
+
+.deletpopup {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 13%;
+
+    background-color: aqua;
+    border-radius:10px;
+    z-index: 3;
+    padding: 2vh;
+
+    z-index: 3;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.deletpopup h3 {
+    font-family:"Merriweather", serif;
+    font-size: small    ;
+    font-weight: 300;
+}
+
+.deletsugestions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#deletno, #deletyes {
+    border-radius: 10px;
+    padding: 4px;
+
+    background-color: white;
+    border: none;
+
+    font-size: small;
+    font-family: "Merriweather", serif;;
+    font-weight: 300;
+
+    width: 25%;
+}
+
+#deletno:hover, #deletyes:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+#deletno:active, #deletyes:active {
+    background-color: rgb(241, 241, 241);
+}
+/*  */
+
+/*  */
+
+
+
+/* responsive */
+
+@media (max-height: 750px) {
+    .saveAndCancle {
+        margin-top: 2vh;
+    }
+}
+
+@media (max-height: 640px) {
+    .adduserpopup {
+        height: 18%;
+    }
+}
+
+@media (max-height: 750px) {
+    .popup  {
+        height: 200px;
+    }
+}
+
+/* @media (max-width:570px) {
+    #qurrentbrt {
+        position: absolute;
+        margin-top:14vh;
+        margin-bottom:1vh;
+        width: 80%;
+        margin-left:10%;
+    }
+
+    .all {
+        margin-top: 7vh;
+    }
+}
+
+@media (max-width: 320px) {
+    #edpg {
+        display: none;
+    }
+
+} */

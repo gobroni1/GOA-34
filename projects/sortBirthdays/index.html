@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--  -->
+
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>main page</title>
+</head>
+<body>
+
+    <!-- filter's pop up box -->
+    <div class="popupbg" id="popupbg">
+        <div class="popup">
+            <div class="monthsselector">
+                <label for="months" class="months-lb">Choose a month</label>
+                <select name="months" id="months">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+
+            <div class="filters1">
+                <p class="filterp">Include Year</p>
+                <div class="toggle-container" onclick="toggleSwitch(this,1)" id="toggle1">
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+
+            <div class="filters1">
+                <p class="filterp">Include names</p>
+                <div class="toggle-container" onclick="toggleSwitch(this,2)" id="toggle2">
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+            
+
+            <div class="filtersbuttondiv">
+                <button id="cancelfilter">Cancel</button>
+                <button id="aplay">aplay</button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    
+    <!-- choosing months -->
+     <div class="top-strip">
+        <img src="./HTML/settingimg.png" alt="settings" id="settings">
+        <div id="qurrentbrt">
+            <input type="text" id="searchBar"  autocomplete="off">
+            <img src="./HTML/search.png" alt="search icon" id="search">
+        </div>
+        <img src="./HTML/filtersicon.png" alt="filters" id="filters">
+     </div>
+     
+     <div class="searchResults" id="searchResults">
+        <!-- search result will be aded here by js -->
+     </div>
+    <!--  -->
+
+    <!-- current or upcoming -->
+    <div class="near" id="mostecurent">
+    </div>
+    <!--  -->
+
+    <div class="all" id="mainDiv">
+
+    </div>
+
+    <!-- side slide bar -->
+     <div class="side-bar" id="sideBar">
+        <img src="./HTML/settingimg.png" alt="colaps" id="colaps">
+        <p id="addpeoplep">Add people</p>
+
+     </div>
+
+    <!-- add people pop up -->
+     <div class="adduserpopupbg" id="popup2bg"> 
+        <div class="adduserpopup">
+            <div class="pop2row1">
+                <label for="fullName">Enter name</label>
+                <input type="text" id="fullName" required>
+            </div>
+    
+            <div class="pop2row2">
+                <label for="birthDate">Enter birth date</label>
+                <input type="date" id="birthDate" required>
+            </div>
+    
+            <div class="saveAndCancle">
+                <button id="cancle">Close</button>
+                <button id="save">Save</button>
+            </div>
+         </div>
+     </div>
+    <!--  -->
+
+    <!-- delet people pop up -->
+     <div class="popUp3bg" id="deletpopUp">
+        <div class="deletpopup">
+            <h3>Delet User?</h3>
+            <div class="deletsugestions">
+                <button id="deletno">Cancel</button>
+                <button id="deletyes">delet</button>
+            </div>
+        </div>
+     </div>
+    <!--  -->
+
+
+    <!-- js scripts -->
+     <script src="./JS/index.js"></script>
+     <script src="./JS/sotrage.js"></script>
+    <!--  -->
+
+</body>
+</html>
