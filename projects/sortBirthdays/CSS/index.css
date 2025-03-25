@@ -131,6 +131,19 @@ body {
     overflow-y: auto;
 }
 
+.binIcon{
+    width: 15px;
+    height: auto;
+
+    filter: brightness(1.5);
+    margin-left: 1vh;
+}
+
+.binanddateholder {
+    display: flex;
+    flex-direction: row;
+}
+
 #mostecurent {
     display: flex;
     flex-direction: row;

@@ -27,6 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
     displayAll();
 });
 
+function deletUser (name, users){
+    users = users.filter(user => user.fullName !== name);
+    
+    return users
+
+}
+
 function displayAll() {
     let usersToDisplay = JSON.parse(localStorage.getItem("users")) || [];
     const mainDiv = document.getElementById("mainDiv");
@@ -47,8 +54,25 @@ function displayAll() {
             const dateP = document.createElement("p");
             dateP.id = "dateP";
             dateP.textContent = user.birthDay;
+
+            const binImage = document.createElement("img");
+            binImage.classList.add("binIcon")
+            binImage.id = user.fullName;
+            binImage.src = "../HTML/bin.png";
+            binImage.addEventListener("click", ()=>{
+               usersToDisplay = usersToDisplay.filter(user => user.fullName !== binImage.id);
+                console.log(usersToDisplay);
+            });
+
+            const dateandbinholder = document.createElement("div");
+            dateandbinholder.classList.add("binanddateholder");
+
             userDiv.appendChild(nameP);
-            userDiv.appendChild(dateP);
+
+            dateandbinholder.appendChild(dateP);
+            dateandbinholder.appendChild(binImage);
+
+            userDiv.appendChild(dateandbinholder);
 
             if (index === 0) {
                 dateP.style.marginRight = "2vh";
