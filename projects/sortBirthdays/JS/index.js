@@ -12,22 +12,6 @@ function Sidebar (i){
 
 //
 
-// open & close filter's pop up
-const filtersicon = document.getElementById("filters");
-filtersicon.addEventListener ("click", ()=>popup1("flex"));
-
-// const aplay = document.getElementById("aplay");
-// aplay.addEventListener("click", ()=>popup1("none"));
-
-const clsfilters = document.getElementById("cancelfilter");
-clsfilters.addEventListener("click", ()=>popup1("none"));
-
-function popup1 (i){
-    const popUp = document.getElementById("popupbg");
-    popUp.style.display = i;
-}
-//
-
 // open and close add user pop up
 const addP = document.getElementById("addpeoplep");
 addP.addEventListener("click", ()=>openpopup2("flex"));
@@ -70,3 +54,71 @@ function FnSearch() {
     searchResults.style.display = "block";
 }
 
+// clear
+
+const clearP = document.getElementById("clearLocalStorage");
+clearP.addEventListener("click", function(){
+    document.getElementById("sideBar").style.display = "none";
+    document.getElementById("deletpopUp").style.display="flex";
+});
+
+const button1 = document.getElementById("clearno");
+const button2 = document.getElementById("clearyes");
+
+button1.addEventListener("click", (e)=>{
+    e.preventDefault();
+
+    document.getElementById("deletpopUp").style.display="none";
+
+})
+
+
+button2.addEventListener("click", ()=>{
+    localStorage.clear();
+    document.getElementById("deletpopUp").style.display="none";
+    location.reload();
+    // alert("all data has been deleted");
+});
+
+
+// CLOSE DATA IMPORT POP UP 
+
+document.getElementById("calcnleImportData").addEventListener("click", (e)=>{
+    e.preventDefault();
+    document.getElementById("importDataPopUpBg").style.display = "none";
+});
+
+// close page board
+
+const x = document.getElementById("closePagesPopUp");
+
+x.addEventListener("click", closePageBoard);
+
+function closePageBoard(){
+    document.getElementById("pagespopupbg").style.display="none";
+    location.reload();
+}
+
+document.getElementById("openboardp").addEventListener("click", (e)=>{
+    e.preventDefault();
+
+    const sidebar = document.getElementById("sideBar");
+    sidebar.style.display = "none";
+
+    document.getElementById("pagespopupbg").style.display="flex ";
+});
+
+// open add page pop up 
+
+document.getElementById("addPage").addEventListener("click", (e)=>{
+    e.preventDefault();
+
+    document.getElementById("addPagepopupbg").style.display = "flex";
+    const sidebar = document.getElementById("sideBar");
+    sidebar.style.display = "none";
+});
+
+document.getElementById("closePageCreation").addEventListener("click", ()=>{
+    document.getElementById("addPagepopupbg").style.display = "none";
+    location.reload();
+});

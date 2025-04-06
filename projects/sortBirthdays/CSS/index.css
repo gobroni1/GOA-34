@@ -23,7 +23,8 @@ body {
     justify-content:space-between;
     background-color:#2f4f4f;
 
-    border-radius:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-top-left-radius:0px;
     border-top-right-radius: 0px;
 }
@@ -86,12 +87,12 @@ body {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 
     border-radius: 5px;
-    align-items: center;
-    justify-content:center;
     position: absolute;
     margin-top: 6vh;
 
     display: none;
+
+    overflow-y: auto;
 }
 
 .near {
@@ -109,6 +110,38 @@ body {
     margin-top: 1vh;
 }
 
+#copyMessage {
+    width: 80%;
+    height: 5vh;
+    background-color:#197772;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+
+    z-index: 4;
+}
+
+#copyMessage h4 {
+    font-family:"Merriweather", serif;
+    font-weight: 100;
+    color: white;
+}
+
+.sideBarP{
+    color:rgb(231, 252, 247);
+}
+
+
+#importData{
+    margin-left: 4vh;
+}
 
 .lb-sel{
     display: flex;
@@ -129,6 +162,7 @@ body {
 
     align-items: center;
     overflow-y: auto;
+    
 }
 
 .binIcon{
@@ -184,6 +218,15 @@ body {
     cursor: pointer;   
 }
 
+
+.resultDiv{
+    width: 90%;          
+    height: 3vh;
+    padding: 2px;
+
+    margin-left: 0.5vh;
+}
+
 /*  */
 .side-bar{
     position: absolute;
@@ -219,6 +262,10 @@ body {
     cursor: pointer;    
 }
 
+#copylocalstorage {
+    margin-left:4vh;
+}
+
 /* filter's pop up box */
 .popupbg {
     width: 100%;
@@ -238,7 +285,7 @@ body {
 .popup {
     position: absolute;
     width:300px;
-    height: 20%;
+    height: 15%;
 
     background-color: #2f4f4f;
     border-radius:10px;
@@ -281,6 +328,8 @@ body {
     flex-direction: row;
 
     justify-content: space-between;
+
+    margin-top: 2.5vh;
 }
 
 .toggle-container {
@@ -328,8 +377,6 @@ body {
 
     background-color: white;
 }
-
-
 
 #aplay:hover, #cancle:hover, #save:hover, #cancelfilter:hover{
     background-color: white;
@@ -414,7 +461,11 @@ body {
     display: none;
 }
 
-/* delet pop up */
+/* clear pop up */
+#clearLocalStorage{
+    margin-left:4vh;
+}
+
 .popUp3bg {
     width: 100%;
     height: 100%;
@@ -435,9 +486,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 13%;
+    height: 9%;
 
-    background-color: aqua;
+    background-color: #2f4f4f;
+
     border-radius:10px;
     z-index: 3;
     padding: 2vh;
@@ -450,8 +502,9 @@ body {
 
 .deletpopup h3 {
     font-family:"Merriweather", serif;
-    font-size: small    ;
+    font-size: small;
     font-weight: 300;
+    color: white;
 }
 
 .deletsugestions {
@@ -460,7 +513,7 @@ body {
     justify-content: space-between;
 }
 
-#deletno, #deletyes {
+#clearno, #clearyes {
     border-radius: 10px;
     padding: 4px;
 
@@ -481,12 +534,226 @@ body {
 #deletno:active, #deletyes:active {
     background-color: rgb(241, 241, 241);
 }
-/*  */
 
-/*  */
+#importDataPopUpBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur(10px);
+    z-index: 1;
 
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
+    display: none;
+}
 
+#lableForDataInTake, #nlableForNewPageName{
+    margin-bottom: 1vh;
+    font-family:"Merriweather", serif;
+    font-weight: 100;
+    font-size: medium;
+}
+
+#importDataPopUp {
+    width: 26vh;
+    height: 14vh;
+    border-radius: 10px;
+    background-color: #2f4f4f;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+#saveImportedData, #calcnleImportData{
+    border-radius: 10px;
+    padding: 6px;
+
+    background-color: white;
+    border: none;
+
+    font-size: small;
+    font-family: "Merriweather", serif;;
+    font-weight: 300;
+
+    width: 25%;
+
+    margin-top: 2vh;
+}
+
+#saveImportedData:active, #calcnleImportData:active{
+    background-color: rgb(230, 230, 230);
+}
+
+#buttonHolderForDataImport{
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pagespopupbg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    display: none;
+}
+
+.pagespopup {
+    position: absolute;
+    width:300px;
+    height: 20%;
+
+    background-color: #2f4f4f;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 3;
+
+    padding: 2vh;
+
+    overflow-y: auto;
+}
+
+.popupTopStrip{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#selectPagebtn{
+    width: 2vh;
+    height: auto;
+
+    filter: brightness(1.3);
+}
+
+#closePagesPopUp{
+    width: 1.8vh;
+    height: 1.8vh;
+    filter: brightness(1.8);
+}
+
+.pageNameHolder{
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+    border-radius: 8px;
+    background-color: aqua;
+
+    background-color: rgb(255, 255, 255);   
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: auto;
+}
+
+#openboardp, #addPage{
+    margin-left:4vh;
+}
+
+.addPagepopupbg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    display: none;
+}
+
+.addPagepopup{
+    width: 26vh;
+    height: 14vh;
+    border-radius: 10px;
+    background-color: #2f4f4f;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+#buttonHolderFornewPageName {
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#saveNewPageName, #closePageCreation{
+    border-radius: 10px;
+    padding: 6px;
+
+    background-color: white;
+    border: none;
+
+    font-size: small;
+    font-family: "Merriweather", serif;;
+    font-weight: 300;
+
+    width: 25%;
+
+    margin-top: 2vh;
+}
+
+#saveNewPageName:active, #closePageCreation:active{
+    background-color: rgb(230, 230, 230);
+}
+
+.pagedivs{
+    width: 90%;
+    height: 20%;
+    margin-top: 1vh;
+
+    background-color: rgba(226, 226, 226, 0.719);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .pagedivs:active{
+    background-color: rgb(196, 196, 196);
+} */
+
+.pageNameP{
+    margin-left: 1vh;
+}
 /* responsive */
 
 @media (max-height: 750px) {
@@ -503,7 +770,7 @@ body {
 
 @media (max-height: 750px) {
     .popup  {
-        height: 200px;
+        height: 150px;
     }
 }
 

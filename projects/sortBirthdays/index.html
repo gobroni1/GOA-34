@@ -13,38 +13,35 @@
     <title>main page</title>
 </head>
 <body>
+    <div id="copyMessage">
+        <h4>You copied site data</h4>
+    </div>
+
+    <div id="importDataPopUpBg">
+        <div id="importDataPopUp">
+            <label for="dataTakeIn" style="color: white;" id="lableForDataInTake">Paste data here</label>
+            <input type="text" id="dataTakeIn" autocomplete="off">
+            <div id="buttonHolderForDataImport">
+                <button id="calcnleImportData">Cancle</button>
+                <button id="saveImportedData">Save</button>
+            </div>
+        </div>
+    </div>
 
     <!-- filter's pop up box -->
     <div class="popupbg" id="popupbg">
         <div class="popup">
-            <div class="monthsselector">
-                <label for="months" class="months-lb">Choose a month</label>
-                <select name="months" id="months">
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                </select>
-            </div>
 
             <div class="filters1">
-                <p class="filterp">Include Year</p>
-                <div class="toggle-container" onclick="toggleSwitch(this,1)" id="toggle1">
+                <p class="filterp" style="color: white;">Disable Years</p>
+                <div class="toggle-container" id="toggle1" onclick="toggleSwitch(this, 1)">
                     <div class="toggle-ball"></div>
                 </div>
             </div>
 
             <div class="filters1">
-                <p class="filterp">Include names</p>
-                <div class="toggle-container" onclick="toggleSwitch(this,2)" id="toggle2">
+                <p class="filterp" style="color: white;">Disable Names</p>
+                <div class="toggle-container" id="toggle2" onclick="toggleSwitch(this, 2)">
                     <div class="toggle-ball"></div>
                 </div>
             </div>
@@ -56,9 +53,7 @@
             </div>
         </div>
     </div>
-    <!--  -->
-    
-    <!-- choosing months -->
+
      <div class="top-strip">
         <img src="./HTML/settingimg.png" alt="settings" id="settings">
         <div id="qurrentbrt">
@@ -85,7 +80,15 @@
     <!-- side slide bar -->
      <div class="side-bar" id="sideBar">
         <img src="./HTML/settingimg.png" alt="colaps" id="colaps">
-        <p id="addpeoplep">Add people</p>
+        <p id="addpeoplep" class="sideBarP">Add people</p>
+        <hr style="width: 80%;">
+        <p id="openboardp" class="sideBarP">Select page</p>
+        <p id="addPage" class="sideBarP">Add page</p>
+        <hr style="width: 80%;">
+        <p id="importData" class="sideBarP">Import data</p>
+        <p id="copylocalstorage" class="sideBarP">Copy data</p>
+        <hr style="width: 80%;">
+        <p id="clearLocalStorage" class="sideBarP">Clear</p>
 
      </div>
 
@@ -113,15 +116,40 @@
     <!-- delet people pop up -->
      <div class="popUp3bg" id="deletpopUp">
         <div class="deletpopup">
-            <h3>Delet User?</h3>
+            <h3>Clear All?</h3>
             <div class="deletsugestions">
-                <button id="deletno">Cancel</button>
-                <button id="deletyes">delet</button>
+                <button id="clearno">Cancel</button>
+                <button id="clearyes">Yes</button>
             </div>
         </div>
      </div>
     <!--  -->
 
+    <!-- add pages pop up -->
+     <div class="pagespopupbg" id="pagespopupbg">
+        <div class="pagespopup" id="pagespopup">
+            <div class="popupTopStrip">
+                <img src="./HTML/closeicon.png"  alt="close" id="closePagesPopUp">
+            </div>
+            <div class="pageNameHolder" id="pageNameHolder">
+
+            </div>
+            <!-- page names here -->
+        </div>
+     </div>
+    <!--  -->
+
+
+    <div class="addPagepopupbg" id="addPagepopupbg">
+        <div class="addPagepopup">
+            <label for="newPagename" style="color: white;" id="lableForNewPageName">Enter new page name</label>
+            <input type="text" id="newPagename" autocomplete="off">
+            <div id="buttonHolderFornewPageName">
+                <button id="closePageCreation">Cancle</button>
+                <button id="saveNewPageName">Save</button>
+            </div>
+        </div>
+    </div>
 
     <!-- js scripts -->
      <script src="./JS/index.js"></script>
